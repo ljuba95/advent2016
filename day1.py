@@ -8,6 +8,7 @@ first = []
 
 def nextDir(direc):
     return (direction + 1 if direction < 3 else 0) if direc == "R" else (direction - 1 if direction > 0 else 3)
+
 def move(pos,direction):
     return (pos[0] + moves[direction][0],pos[1] + moves[direction][1])
 
