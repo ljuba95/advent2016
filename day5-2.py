@@ -11,6 +11,7 @@ def get_pw(code):
         pos = int(hashstr[5],16)
         if hashstr.startswith("00000") and 0 <= pos < 8 and pw[pos] == '_' :
             pw[pos] = hashstr[6]
+            print("Iteration %d found %c" % (i,pw[pos]))
         i += 1
     return "".join(pw)
 
